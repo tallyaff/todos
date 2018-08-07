@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Todos</title>
+</head>
+
+<body onload="init()" background="img/flowers.jpg">
+
+    <h1>
+        Todos
+        <span class="active-count"></span>
+        (total:
+        <span class="total-count"></span>)
+    </h1>
+
+    <div class="container">
+        <button class="btn btn-add" onclick="addTodo()">+</button>
+        <div class="no-todos-msg"></div>
+        <ul class="todos">
+
+        </ul>
+
+
+        <div class="ddls-container">
+            <span class="filtet-txt">Filter todo's by :</span>
+            <select class="status-filter" onchange="setFilter(this.value)">
+                <option>All</option>
+                <option>Active</option>
+                <option>Done</option>
+            </select>
+            <span class="sort-txt">Sort todo's by :</span>
+            <select class="preferance-filter" onchange="todosSort(this.value)">
+                    <option>Text</option>
+                    <option>Created</option>
+                    <option>Importance</option>
+            </select>
+
+        </div>
+    </div>
+
+
+    <!-- 
+
+  <li class="todo" onclick="todoClicked(this)">
+                <label>
+                    <input type="checkbox" onclick="event.preventDefault()" /> Item 1
+                </label>
+            </li>
+
+
+ -->
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

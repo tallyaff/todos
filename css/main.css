@@ -1,0 +1,94 @@
+
+*  {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  background-repeat: no-repeat;  
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+margin:0 auto;
+background-color: rgba(255, 255, 255, 0.8);
+width: 50%;
+}
+
+h1{
+  text-align: center;
+  background-color:rgba(103 ,165 ,164,0.5);
+  opacity: 1;
+}
+.todos {
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+.todo .btns {
+  float:right;
+}
+
+.btn {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 2px solid #983A38;
+margin: 5px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #983A38;
+  color:white;
+}
+
+
+.btn-up{
+cursor: pointer;
+float: right;
+display: block;
+}
+
+.btn-down{
+cursor: pointer;
+float: right;
+display: block;
+}
+
+
+
+.btn-danger {
+  border: 2px solid	#D28B0F;
+}
+.btn-danger:hover {
+  background-color: 	#D28B0F;
+
+}
+
+
+/* .todo::before {
+  content: " ";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.todo.done::before {
+  content: "\2022";
+} */
+
+
+
